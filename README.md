@@ -107,5 +107,9 @@ window.Vue = require('vue');
 import VueSweetalert2 from 'vue-sweetalert2';
 Vue.use(VueSweetalert2);
 
+Two Login account is avaiable for login
+- username: steve/ pwd: (you can read UserTableSeeder)/ Type is Super admin: You can see all data
+- username: admin/ pwd: (you can read UserTableSeeder)/ Type is admin: You only can login, not allow see the data
+
 ### Contact
   If have any question, please email to steveriven94@gmail.com
