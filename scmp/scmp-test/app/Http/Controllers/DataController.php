@@ -26,7 +26,7 @@ class DataController extends Controller
             'phone' => $request->phone,
             'type' => 'customer',
         ])->save();
-        return response()->json(200);
+        return response()->json(['created'=>true]);
         
     }
 }
