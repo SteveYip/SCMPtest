@@ -36824,7 +36824,10 @@ var staticRenderFns = [
     return _c("div", { staticClass: "pull-right" }, [
       _c(
         "button",
-        { staticClass: "btn btn-success", attrs: { type: "submit" } },
+        {
+          staticClass: "btn btn-success",
+          attrs: { type: "submit", id: "submit" }
+        },
         [_vm._v("\n                    Submit\n                ")]
       )
     ])
@@ -38870,7 +38873,7 @@ VueSweetalert2.install = function(Vue) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global, setImmediate) {/*!
- * Vue.js v2.5.14
+ * Vue.js v2.5.15
  * (c) 2014-2018 Evan You
  * Released under the MIT License.
  */
@@ -40848,7 +40851,7 @@ function traverse (val) {
 function _traverse (val, seen) {
   var i, keys;
   var isA = Array.isArray(val);
-  if ((!isA && !isObject(val)) || Object.isFrozen(val)) {
+  if ((!isA && !isObject(val)) || Object.isFrozen(val) || val instanceof VNode) {
     return
   }
   if (val.__ob__) {
@@ -43953,7 +43956,7 @@ Object.defineProperty(Vue, 'FunctionalRenderContext', {
   value: FunctionalRenderContext
 });
 
-Vue.version = '2.5.14';
+Vue.version = '2.5.15';
 
 /*  */
 
